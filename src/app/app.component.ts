@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CallbackDataParams } from 'echarts/types/dist/echarts';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'echarts13541';
+  constructor() {
+    const labelFormatter = (info: CallBackDataParams) => '<div>Test</div>';
+  }
 }
